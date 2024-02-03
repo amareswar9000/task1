@@ -213,15 +213,25 @@
         <span>
           <a href="#"> Amareswar reddy</a> | <span class="far fa-copyright"></span> 2024 All Rights Reserved. Privacy Policy
         </span>
-        <section><div class="counter">
-          <span id="pageviews-count">0</span>
-          <h4>Pageviews</h4>
-      </div>
-      <div class="counter">
-          <span id="visits-count">0</span>
-          <h4>Visits</h4>
-      </div>
-</section>
+        <h1 class="counter">Welcome to My Website!</h1>
+  <p class="counter">This website has been visited:</p>
+  <p class="counter" id="visit-count">0</p>
+
+  <script>
+    // Function to update and display visit count
+    function updateVisitCount() {
+      let count = localStorage.getItem('visitCount') || 0;
+      count = parseInt(count) + 1;
+      localStorage.setItem('visitCount', count);
+      document.getElementById('visit-count').textContent = count;
+    }
+
+    // Call the function on page load
+    window.onload = function() {
+      updateVisitCount();
+    };
+  </script>
+
       </footer>
       <script src='https://kit.fontawesome.com/3b57a2a2a7.js'></script>
       <!-- JavaScript Removed -->

@@ -4,7 +4,16 @@
     box-sizing: border-box;
     text-decoration: none;
   }
-  
+  .counter{
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    #visit-count {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
   html {
     scroll-behavior: smooth;
   }
@@ -778,16 +787,4 @@
       line-height: 38px;
     }
   }
-  /* styles.css */
-.counter {
-  display: inline-block;
-  margin: 10px;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-}
-
-#pageviews-count,
-#visits-count {
-  font-weight: bold;
-  font-size: 24px;
-}
+ 
